@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../../static/accounts/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="account__input">
+            <form action="" method="POST">
+                {% csrf_token %}
+                {% for field in form %}
+                    <p> {{ field.label }}
+                        {{ field }} </p>
+                {% endfor %}
+                <input class="account__submit" type="submit" value="Let's go!">
+                {{ form.errors }}
+            </form>
+        </div>
+    </div>
+</body>
+</html>

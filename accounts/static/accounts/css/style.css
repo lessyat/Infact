@@ -1,0 +1,10 @@
+* {
+    font-family: 'Cormorant Unicase', serif;
+    color: rgb(221, 226, 198)
+}
+
+body {
+    background: rgb(9, 12, 2);
+    background: linear-gradient(90deg, rgba(44, 43, 40,1) 30%, rgba(9, 12, 2,1) 100%);
+
+}

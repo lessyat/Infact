@@ -1,0 +1,79 @@
+* {
+    font-family: 'Cormorant Unicase', serif;
+    color: rgb(221, 226, 198)
+}
+
+body {
+    background: rgb(9, 12, 2);
+    background: linear-gradient(90deg, rgba(44, 43, 40,1) 30%, rgba(9, 12, 2,1) 100%);
+
+}
+
+.top {
+    text-align: center;
+    margin: 35px;
+    margin-bottom: 60px;
+}
+
+.title {
+    font-size: 120px;
+    margin: 0;
+}
+
+.sub__title {
+    font-size: 30px;
+    margin: 0;
+}
+
+.dashboard__btns {
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.dashboard__btn {
+    background: none;
+    border-radius: 5px;
+    width: 400px;
+    height: 100px;
+    font-size: 45px;
+    transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.dashboard__btn:hover {
+    background: rgb(52, 57, 48);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.dashboard__btn:focus {
+    outline: none;
+}
+
+.login {
+    text-align: right;
+}
+
+.login__btn {
+    background: none;
+    width: 170px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.login__btn:hover {
+    background: rgb(52, 57, 48);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.login__btn:focus {
+    outline: none;
+}
+
+
+
