@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
+import django_heroku
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -75,8 +76,13 @@ WSGI_APPLICATION = 'Infact.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd9f98ht353mcq',
+        'USER': 'nigylfebuwvjyb',
+        'PASSWORD': '1080eae3b562047e90c56d780ad06f43a716bf7d922a6a357f9651043da38dca',
+        'HOST': 'ec2-34-252-251-16.eu-west-1.compute.amazonaws.com',
+        'PORT': '5432',
+
     }
 }
 
@@ -117,3 +123,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 CSRF_COOKIE_DOMAIN = '127.0.0.1'
+
+django_heroku.settings(locals())
