@@ -1,0 +1,16 @@
+.fact {
+    margin: 0 auto;
+    width: 800px;
+    height: 270px;
+    font-size: 40px;
+}
+
+.options {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.like {
+    text-align: centre;
+}

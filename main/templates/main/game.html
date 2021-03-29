@@ -3,10 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="../../static/main/css/categories_style.css">
+    <link rel="stylesheet" href="../../static/main/css/general.css">
+    <link rel="stylesheet" href="../../static/main/css/game_style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    Game
+    <div class="login">
+        <a href="/login"><button class="button login__btn">Login</button></a>
+    </div>
+
+    <div class="fact">
+        {{fact.phrase}}
+    </div>
+
+    <div class="options">
+        <button name="like" id="like-btn">like</button>
+    </div>
+
+    <div class="back">
+        <a href="/"><button class="button back__btn">Back</button></a>
+    </div>
 </body>
 </html>

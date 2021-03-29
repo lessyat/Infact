@@ -11,7 +11,39 @@ body {
 .button {
     background: none;
     border-radius: 5px;
-    width: 400px;
-    height: 100px;
     transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.button:hover {
+    background: rgb(52, 57, 48);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.login {
+    text-align: right;
+    margin-bottom: 80px;
+}
+
+.login__btn {
+    width: 170px;
+    height: 50px;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.back {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.back__btn {
+    width: 150px;
+    height: 50px;
+    font-size: 30px;
 }
