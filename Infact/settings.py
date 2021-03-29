@@ -132,6 +132,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-CSRF_COOKIE_DOMAIN = '127.0.0.1'
 
 django_heroku.settings(locals())
